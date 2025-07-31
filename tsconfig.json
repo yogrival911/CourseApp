@@ -1,3 +1,19 @@
 {
-  "extends": "@react-native/typescript-config"
+   "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@features/*": ["features/*"],
+      "@service/*": ["service/*"],
+      "@components/*": ["components/*"],
+      "@navigation/*": ["navigation/*"],
+      "@themes/*": ["themes/*"],
+      "@screens/*": ["screens/*"],
+      "@redux/*": ["features/course/redux/*"],
+      "@domain/*": ["features/course/domain/*"],
+      "@utils/*": ["utils/*"],
+      "@shared/*": ["shared/*"],
+      "@assets/*": ["assets/*"]
+    }
+  }
 }
